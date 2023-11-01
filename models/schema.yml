@@ -9,11 +9,11 @@ sources:
         identifier: raw_gz_sales
         description: sales of greenweez 
         tests:
-            - unique :   
-              column_name: "(orders_id || '_' || product_id)"
+          - unique :   
+              column_name: "(orders_id || '_' || pdt_id)"
         columns:
-          - name: date_date
-            description: the date of purchase
+            - name: date_date
+              description: the date of purchase
               
       - name: product
         identifier: raw_gz_product 

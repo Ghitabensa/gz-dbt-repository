@@ -9,11 +9,11 @@ source as (
 renamed as (
 
     select
-        products_id,
-        purchse_price AS puchase_price
-
+           products_id
+           ,CAST ( purchse_price AS FLOAT64) AS purchase_price
     from source
 
 )
+
 
 select * from renamed
